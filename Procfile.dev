@@ -1,0 +1,3 @@
+web: env RUBY_DEBUG_OPEN=true PORT=3006 bin/rails server
+js: yarn build --watch
+css: bun run build:css --watch

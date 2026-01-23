@@ -1,0 +1,5 @@
+= turbo_stream.replace @line_item
+  = render @line_item, quote: @quote, line_item_date: @line_item_date
+= turbo_stream.update nested_dom_id(:total, @quote) do
+  = render "quotes/total", quote: @quote
+= render_turbo_stream_flash_messages

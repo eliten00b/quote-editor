@@ -1,0 +1,8 @@
+.container
+  = link_to sanitize("&larr; Back to quote"), @quote
+
+  .header
+    h1 Edit date
+
+  = turbo_frame_tag nested_dom_id(:edit, @line_item_date) do
+    = render "form", quote: @quote, line_item_date: @line_item_date

@@ -1,0 +1,3 @@
+.empty-state.empty-state--only-child
+  p.empty-state__text You don't have any dates yet!
+  = link_to "New date", [:new, quote, :line_item_date], data: { turbo_frame: dom_id(LineItemDate.new) }, class: "btn btn--primary"
