@@ -11,7 +11,7 @@ gem "cssbundling-rails"
 gem "jbuilder"
 gem "slim-rails", "~> 4.0"
 gem "simple_form", "~> 5.4"
-gem "devise", "~> 4.9"
+gem "devise", "~> 5.0"
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "image_processing", "~> 1.2"
