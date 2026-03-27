@@ -50,14 +50,14 @@ class LineItemsController < ApplicationController
   end
 
   def set_quote
-    @quote = Current.company.quotes.find(params[:quote_id])
+    @quote = Current.company.quotes.find(params.require(:quote_id))
   end
 
   def set_line_item_date
-    @line_item_date = @quote.line_item_dates.find(params[:line_item_date_id])
+    @line_item_date = @quote.line_item_dates.find(params.require(:line_item_date_id))
   end
 
   def set_line_item
-    @line_item = @line_item_date.line_items.find(params[:id])
+    @line_item = @line_item_date.line_items.find(params.require(:id))
   end
 end

@@ -52,7 +52,7 @@ class QuotesController < ApplicationController
   private
 
   def set_quote
-    @quote = Current.company.quotes.find(params[:id])
+    @quote = Current.company.quotes.find(params.require(:id))
   end
 
   def quote_params
